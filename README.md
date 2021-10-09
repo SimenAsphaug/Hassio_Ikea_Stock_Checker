@@ -11,7 +11,7 @@
 | Name    | Type        | Default       |   Description     |
 |---------|-------------|---------------|-------------------|
 | `product_id`    | string | **Required** | Product ID, see [below](#product-id) how to get this. |
-| `store`         | number | **Required** | Store ID, see below how to get this. |
+| `store`         | number | **Required** | Store ID, see [below](#store-id) how to get this. |
 | `url_locale`    | string | **Required** | no/no for Norway, se/sv for Sweden ect. |
 | `friendly_name` | string | **Required** | Friendly name for you sensor, example: name of item. |
 
