@@ -2,43 +2,29 @@
 Home Assistant sensor that checks Ikea stock on one or multiple items.
 
 
-- [Features](#features)
-- [Configuration](#configuration)
-  - [Main Options](#main-options)
-  - [Action](#action)
-  - [Confirmation](#confirmation)
-  - [Lock Object](#lock-object)
-  - [State](#state)
-  - [Available operators](#available-operators)
-  - [Layout](#layout)
-  - [`triggers_update`](#triggers_update)
-  - [Javascript Templates](#javascript-templates)
-  - [Styles](#styles)
-    - [Easy styling options](#easy-styling-options)
-    - [Light entity color variable](#light-entity-color-variable)
-    - [ADVANCED styling options](#advanced-styling-options)
-    - [Injecting CSS with `extra_styles`](#injecting-css-with-extra_styles)
-  - [Custom Fields](#custom-fields)
-  - [Configuration Templates](#configuration-templates)
-    - [General](#general)
-    - [Merging state by id](#merging-state-by-id)
-    - [Variables](#variables)
-- [Installation](#installation)
-  - [Manual Installation](#manual-installation)
-  - [Installation and tracking with `hacs`](#installation-and-tracking-with-hacs)
-- [Examples](#examples)
-  - [Configuration with states](#configuration-with-states)
-    - [Default behavior](#default-behavior)
-    - [With Operator on state](#with-operator-on-state)
-    - [`tap_action` Navigate](#tap_action-navigate)
-    - [blink](#blink)
-  - [Play with width, height and icon size](#play-with-width-height-and-icon-size)
-  - [Templates Support](#templates-support)
-    - [Playing with label templates](#playing-with-label-templates)
-    - [State Templates](#state-templates)
-  - [Styling](#styling)
-  - [Lock](#lock)
-  - [Aspect Ratio](#aspect-ratio)
-  - [Changing the feedback color during a click](#changing-the-feedback-color-during-a-click)
-- [Community guides](#community-guides)
-- [Credits](#credits)
+| Name    | Type        | **Required**  |   Description     |
+|---------|-------------|---------------|-------------------|
+| `product_id`    | 
+| `store`         |
+| `url_locale`    |
+| `friendly_name` |
+
+
+
+
+
+
+
+
+Example:
+
+```yaml
+sensor:
+  - platform: ikea_sensor
+    product_id: 10260281
+    store: '095'
+    url_locale: no/no
+    friendly_name: Skap 100x35
+```
+
+
