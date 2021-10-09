@@ -1,0 +1,10 @@
+{
+    "domain": "ikea_sensor",
+    "name": "Ikea Sensor",
+    "documentation": "https://github.com/SimenAsphaug/Home-Assistant-IKEA-Stock-Checker",
+    "dependencies": [],
+    "codeowners": ["@SimenAsphaug"],
+    "requirements": ["voluptuous==0.12.2", "requests==2.26.0", "xmltodict==0.11.0"],
+    "iot_class": "cloud_polling",
+    "version": "0.1.0"
+  }
