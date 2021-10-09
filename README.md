@@ -19,7 +19,7 @@
 
 
 ### Product ID
-Visit https://www.ikea.com/en/gb/ and search for your product. At the end of the URL there is a 8-digit code. This is the Product ID.
+Visit https://www.ikea.com/gb/en/ and search for your product. At the end of the URL there is a 8-digit code. This is the Product ID.
 
 Example: 
 
