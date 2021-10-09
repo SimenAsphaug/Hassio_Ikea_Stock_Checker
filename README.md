@@ -23,7 +23,7 @@ Visit www.ikea.no to get the product ID.
 
 
 ### Store ID
-Visit www.ikea.no to get the product ID.
+Visit https://github.com/Ephigenia/ikea-availability-checker, install it and run ```npx ikea-availability-checker stores no```
 
 
 
