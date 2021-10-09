@@ -24,6 +24,7 @@ Visit www.ikea.com and search for your product. At the end of the URL there is a
 Example: 
 
 ```https://www.ikea.com/no/no/p/pax-garderobeskapstamme-brunsvart-10260281/```
+
 Where ```10260281``` is my product ID.
 
 
