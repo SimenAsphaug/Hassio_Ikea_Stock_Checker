@@ -11,10 +11,10 @@ Home Assistant sensor that checks Ikea stock on one or multiple items.
 
 
 
+## Features
 
-
-
-
+- Gets stock on item from selected IKEA store in specific country.
+- Makes a sensor that updates every 5 minutes.
 
 Example:
 
