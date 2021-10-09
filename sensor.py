@@ -1,15 +1,18 @@
+# Python imports
 import logging
 import requests
 import json
 import voluptuous as vol
 from datetime import timedelta
 
+# More imports for home assistant
 import homeassistant.helpers.config_validation as cv
 from homeassistant.const import (ATTR_ATTRIBUTION, CONF_FRIENDLY_NAME)
 from homeassistant.components.sensor import (PLATFORM_SCHEMA, ENTITY_ID_FORMAT)
 from homeassistant.helpers.entity import Entity
 from homeassistant.util import Throttle, slugify
 
+# Variables
 ATTRIBUTION = 'Data provided by ikea.com'
 USER_AGENT = "Home Assistant IKEA sensor"
 CONF_PRODUCT = 'product_id'
@@ -20,7 +23,7 @@ ACCEPT = "application/vnd.ikea.iows+json:version=1.0"
 CONSUMER = "MAMMUT"
 CONTRACT = "37249"
 
-
+# Data validation
 PLATFORM_SCHEMA = PLATFORM_SCHEMA.extend({
     vol.Required(CONF_PRODUCT): cv.string,   
     vol.Required(CONF_STORE): cv.string,
@@ -28,11 +31,12 @@ PLATFORM_SCHEMA = PLATFORM_SCHEMA.extend({
     vol.Optional(CONF_FRIENDLY_NAME): cv.string
 })
 
-
+# Update timer
 TIME_BETWEEN_UPDATES = timedelta(minutes=5)
 
 _LOGGER = logging.getLogger(__name__)
 
+# Setup - Creates enteties
 def setup_platform(hass, config, add_entities, discovery_info=None):
     product_id = config.get(CONF_PRODUCT)
     store_id = config.get(CONF_STORE)
@@ -54,29 +58,33 @@ class IKEASensor(Entity):
         self._product_id = product_id
         self._store_id = store_id
 
+    # Sets friendly name
     @property
     def name(self):
         """Return the name of the sensor."""
         return self._friendly_name
 
+    # Sets icon
     @property
     def icon(self):
         """Icon to use in the frontend, if any."""
         return 'mdi:shopping'
 
+    # Sets state of device, aka stock number
     @property
     def state(self):
         """Return the state of the device."""
         if self._test2:
             return self._test2
         return '-'
-
+    
+    # Unit of measurements, i have it as stk in Norwegian
     @property
     def unit_of_measurement(self):
         """Return the unit of measurement of this entity, if any."""
         return "units"
 
-
+    # Updates stock every TIME_BETWEEN_UPDATES as above.
     @Throttle(TIME_BETWEEN_UPDATES)
     def update(self):
         """Get the latest data and updates the states."""
