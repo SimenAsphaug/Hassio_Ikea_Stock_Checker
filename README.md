@@ -19,7 +19,12 @@
 
 
 ### Product ID
-Visit www.ikea.no to get the product ID.
+Visit www.ikea.com and search for your product. At the end of the URL there is a 8-digit code. This is the Product ID.
+
+Example: 
+
+```https://www.ikea.com/no/no/p/pax-garderobeskapstamme-brunsvart-10260281/```
+Where ```10260281``` is my product ID.
 
 
 ### Store ID
@@ -44,6 +49,9 @@ This will return something like this:
     ├─────────────┼─────────┼────────┼────────────────┤
     │ no          │ Norway  │ 441    | Åsane          |
     └─────────────┴─────────┴────────┴────────────────┘
+    
+buCode is your Store ID.
+
 
 
 
