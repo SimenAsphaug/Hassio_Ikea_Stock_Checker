@@ -19,11 +19,11 @@
 
 
 ### Product ID
+Visit www.ikea.no to get the product ID.
 
 
 ### Store ID
-
-
+Visit www.ikea.no to get the product ID.
 
 
 
