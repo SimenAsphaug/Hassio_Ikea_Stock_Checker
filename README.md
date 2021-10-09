@@ -23,9 +23,27 @@ Visit www.ikea.no to get the product ID.
 
 
 ### Store ID
-Visit https://github.com/Ephigenia/ikea-availability-checker, install it and run ```npx ikea-availability-checker stores no```
+Visit https://github.com/Ephigenia/ikea-availability-checker, install it and run ```npx ikea-availability-checker stores no``` where ```no``` is your country code!
+This will return something like this:
 
 
+    ┌─────────────┬─────────┬────────┬────────────────┐
+    │ countryCode │ country │ buCode │ name           │
+    ├─────────────┼─────────┼────────┼────────────────┤
+    │ no          │ Norway  │ 007    │ Sørlandet      │
+    ├─────────────┼─────────┼────────┼────────────────┤
+    │ no          │ Norway  │ 091    │ Slependen      │
+    ├─────────────┼─────────┼────────┼────────────────┤
+    │ no          │ Norway  │ 095    │ Furuset        │
+    ├─────────────┼─────────┼────────┼────────────────┤
+    │ no          │ Norway  │ 126    │ Forus          │
+    ├─────────────┼─────────┼────────┼────────────────┤
+    │ no          │ Norway  │ 371    │ Leangen        │
+    ├─────────────┼─────────┼────────┼────────────────┤
+    │ no          │ Norway  │ 390    │ Ringsaker      │
+    ├─────────────┼─────────┼────────┼────────────────┤
+    │ no          │ Norway  │ 441    | Åsane          |
+    └─────────────┴─────────┴────────┴────────────────┘
 
 
 
