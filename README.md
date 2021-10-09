@@ -71,3 +71,7 @@ buCode is your Store ID.
 
 
 
+## Refrences
+[IKEA Availability Checker](https://github.com/Ephigenia/ikea-availability-checker)
+
+
