@@ -1,4 +1,4 @@
-# Home Assistant Stock Checker
+# Home Assistant IKEA Stock Checker
 
 ## Features
 
