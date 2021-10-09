@@ -6,6 +6,8 @@
 - Makes a sensor that updates every 5 minutes.
 
 
+## Configuration
+
 | Name    | Type        | Default       |   Description     |
 |---------|-------------|---------------|-------------------|
 | `product_id`    | string | **Required** | test1 |
