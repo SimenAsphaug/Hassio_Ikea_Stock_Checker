@@ -1,5 +1,9 @@
 # Home Assistant Stock Checker
-Home Assistant sensor that checks Ikea stock on one or multiple items.
+
+## Features
+
+- Gets stock on item from selected IKEA store in specific country.
+- Makes a sensor that updates every 5 minutes.
 
 
 | Name    | Type        | Default       |   Description     |
@@ -10,11 +14,6 @@ Home Assistant sensor that checks Ikea stock on one or multiple items.
 | `friendly_name` | string | **Required** | test1 |
 
 
-
-## Features
-
-- Gets stock on item from selected IKEA store in specific country.
-- Makes a sensor that updates every 5 minutes.
 
 Example:
 
