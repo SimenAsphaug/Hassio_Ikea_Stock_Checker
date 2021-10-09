@@ -75,5 +75,5 @@ buCode is your Store ID.
 [IKEA Availability Checker](https://github.com/Ephigenia/ikea-availability-checker)
 
 [IKEA Availability sensor](https://github.com/psvanstrom/hass/blob/master/README.md#ikea-availability-sensor)
-Could net get this one to work, so i made my won ghetto one. All credz to psvanstrom
+Could net get this one to work, so i made my own ghetto version, with less functions :o. All credz to psvanstrom
 
