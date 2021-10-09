@@ -28,6 +28,8 @@ Example:
 Where ```10260281``` is my product ID.
 
 
+
+
 ### Store ID
 Visit https://github.com/Ephigenia/ikea-availability-checker, install it and run ```npx ikea-availability-checker stores no``` where ```no``` is your country code!
 This will return something like this:
