@@ -2,12 +2,12 @@
 Home Assistant sensor that checks Ikea stock on one or multiple items.
 
 
-| Name    | Type        | **Required**  |   Description     |
+| Name    | Type        | Default       |   Description     |
 |---------|-------------|---------------|-------------------|
-| `product_id`    | 
-| `store`         |
-| `url_locale`    |
-| `friendly_name` |
+| `product_id`    | string | **Required** | test1 |
+| `store`         | number | **Required** | test1 |
+| `url_locale`    | string | **Required** | test1 |
+| `friendly_name` | string | **Required** | test1 |
 
 
 
