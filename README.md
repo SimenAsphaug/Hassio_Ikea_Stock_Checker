@@ -15,6 +15,20 @@
 | `url_locale`    | string | **Required** | no/no for Norway, se/sv for Sweden ect. |
 | `friendly_name` | string | **Required** | Friendly name for you sensor, example: name of item. |
 
+Example configuration.yaml:
+
+```yaml
+sensor:
+  - platform: ikea_sensor
+    product_id: 10260281
+    store: '095'
+    url_locale: no/no
+    friendly_name: Skap 100x35
+```
+
+
+
+
 
 
 
@@ -55,18 +69,5 @@ This will return something like this:
     
 buCode is your Store ID.
 
-
-
-
-Example:
-
-```yaml
-sensor:
-  - platform: ikea_sensor
-    product_id: 10260281
-    store: '095'
-    url_locale: no/no
-    friendly_name: Skap 100x35
-```
 
 
